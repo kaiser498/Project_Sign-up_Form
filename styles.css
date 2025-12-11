@@ -70,48 +70,18 @@ h6 {
   src: url("../fonts/audiowide-v22-latin-regular.woff2") format("woff2");
 }
 
-body {
-  display: flex;
+@font-face {
+  font-display: swap;
+  font-family: 'Funnel Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/funnel-sans-v3-latin-regular.woff2') format('woff2');
 }
 
-.pic-content {
-  position: relative;
-}
-
-.pic-content > figure:first-child {
-  position: relative;
-}
-
-.pic-content > figure:first-child > figcaption {
-  position: absolute;
-  bottom: 0;
-  color: white;
-  background-color: rgb(0, 0, 0, 0.6);
-  text-align: center;
-}
-
-.pic-content > figure:first-child > figcaption > a {
-  text-decoration: underline;
-  color: white;
-}
-
-.logo {
-  position: absolute;
-  top: 300px;
-  background-color: rgb(0, 0, 0, 0.4);
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.logo img {
-  width: 5rem;
-}
-
-.logo-text {
-  color: white;
-  font-family: "Audiowide";
-  font-size: 2.5rem;
-  align-self: center;
-  margin-left: 1rem;
+@font-face {
+  font-display: swap;
+  font-family: 'Funnel Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/funnel-sans-v3-latin-italic.woff2') format('woff2');
 }
