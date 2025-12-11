@@ -89,6 +89,7 @@ h6 {
 body {
   display: flex;
   font-family: "Funnel Sans";
+  letter-spacing: 2px;
 }
 
 .pic-content {
@@ -101,11 +102,12 @@ body {
 
 .logo {
   position: absolute;
-  top: 300px;
+  top: 200px;
   background-color: rgb(0, 0, 0, 0.4);
   display: flex;
   width: 100%;
   justify-content: center;
+  padding: 0.5rem 0;
 }
 
 .logo img {
@@ -131,4 +133,102 @@ body {
 .pic-content > figure:first-child > figcaption > a {
   text-decoration: underline;
   color: white;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #f0f0f0;
+}
+
+.upper {
+  padding: 4rem 6rem 2rem 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  letter-spacing: 3px;
+}
+
+span {
+  font-style: italic;
+}
+
+.upper p:last-child {
+  padding-top: 1rem;
+}
+
+.middle {
+  background-color: white;
+  padding: 2rem 2rem 1rem 2rem;
+  box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.middle fieldset {
+  display: flex;
+  border: 0;
+}
+
+.middle fieldset legend {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.middle div {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle div:last-child{
+  margin-left: 2rem;
+}
+
+.middle label {
+  text-transform: uppercase;
+}
+
+.middle input {
+  margin-bottom: 1rem;
+  width: 16rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+input:focus {
+  border: 2px solid blue;
+  outline: 0;
+  box-shadow: 1px 2px rgb(0, 0, 255, 0.5);
+}
+
+input[name="user_password"]:invalid,
+input[name="user_confirm_password"]:invalid {
+  border: 2px solid red;
+  outline: 0;
+}
+
+.lower {
+  padding: 2rem 0 0 2rem;
+  margin-bottom: 6%;
+}
+
+.lower button {
+  padding: 0.5rem 2rem;
+  background-color: #596d48;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.lower a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 600;
+}
+
+.lower a:hover {
+  text-decoration: underline;
 }
