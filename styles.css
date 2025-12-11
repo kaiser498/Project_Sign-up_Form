@@ -85,3 +85,9 @@ h6 {
   font-weight: 400;
   src: url('../fonts/funnel-sans-v3-latin-italic.woff2') format('woff2');
 }
+
+body {
+  display: flex;
+  font-family: "Funnel Sans";
+}
+
