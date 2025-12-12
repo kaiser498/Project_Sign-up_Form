@@ -165,23 +165,23 @@ span {
 }
 
 .middle fieldset {
-  display: flex;
   border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40rem;
+  justify-content: space-between;
+}
+
+.middle fieldset div {
+  flex-basis: 16rem;
+  flex-shrink: 1;
+  flex-grow: 0;
 }
 
 .middle fieldset legend {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-
-.middle div {
-  display: flex;
-  flex-direction: column;
-}
-
-.middle div:last-child{
-  margin-left: 2rem;
 }
 
 .middle label {
