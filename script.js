@@ -10,3 +10,9 @@ submitBtn.addEventListener("click", (event) => {
     userConfirmPassword.focus();
   }
 });
+
+userConfirmPassword.addEventListener("input", () => {
+  if (userPassword.value === userConfirmPassword.value) {
+    passwordDonotMatch.textContent = "";
+  }
+});
