@@ -208,6 +208,11 @@ input[name="user_confirm_password"]:invalid {
   outline: 0;
 }
 
+.password_donot_match {
+  color: red;
+  font-size: 0.9rem;
+}
+
 .lower {
   padding: 2rem 0 0 2rem;
   margin-bottom: 6%;
