@@ -1,9 +1,12 @@
 const userPassword = document.querySelector("#user_password");
 const userConfirmPassword = document.querySelector("#user_confirm_password");
+const passwordDonotMatch = document.querySelector(".password_donot_match");
+const submitBtn = document.querySelector("button[type='submit']");
 
-function validatePassword() {
+submitBtn.addEventListener("click", (event) => {
   if (userPassword.value !== userConfirmPassword.value) {
-    userConfirmPassword.setCustomValidity("Passwords do not match");
-    return false;
+    event.preventDefault();
+    passwordDonotMatch.textContent = "Error: Passwords do not match!";
+    userConfirmPassword.focus();
   }
-}
+});
